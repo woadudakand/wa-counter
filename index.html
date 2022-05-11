@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter</title>
+
+    <style>
+        .wa-counter {
+            display: inline-flex;
+            width: 100%;
+            justify-content: space-around;
+            align-items: center;
+            margin: 300px 0 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wa-counter">
+        <div>
+            $<span class="wa-item">6000</span>
+            <p>First one</p>
+        </div>
+        <div>
+            $<span class="wa-item">50</span>
+            <p>Second One</p>
+        </div>
+        
+        <div>
+            <span class="wa-item">12000</span>+
+            <p>3rd One</p>
+        </div>
+
+        <div>
+            <span class="wa-item">100</span>+
+            <p>4th One</p>
+        </div>
+    </div>
+    
+    <script src="./counter.js"></script>
+    <script>
+        window.addEventListener('load', function() {
+            waCounter('.wa-counter', {
+                time: 3000
+            });
+        })
+    </script>
+</body>
+</html>
